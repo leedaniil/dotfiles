@@ -1,0 +1,34 @@
+{
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 1,
+    "go.autocompleteUnimportedPackages": true,
+    "go.formatTool": "goimports",
+    "go.coverageOptions": "showCoveredCodeOnly", 
+    "go.useLanguageServer": false,
+    "go.vetOnSave": "off",
+    "go.toolsEnvVars": {
+        "GO111MODULE": "on"
+    },
+    "[go]": {
+        "editor.snippetSuggestions": "top",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "files.eol": "\n",
+    "workbench.colorTheme": "GitHub Light",
+    "http.proxyAuthorization": null,
+    "editor.formatOnSave": true,
+    "extensions.ignoreRecommendations": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "python.formatting.provider": "black"
+}

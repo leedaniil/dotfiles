@@ -1,0 +1,12 @@
+DavidAnson.vscode-markdownlint
+eamodio.gitlens
+GitHub.github-vscode-theme
+golang.go
+monokai.theme-monokai-pro-vscode
+ms-python.python
+ms-python.vscode-pylance
+ms-vscode-remote.remote-containers
+Nimda.deepdark-material
+PKief.material-icon-theme
+waderyan.gitblame
+zxh404.vscode-proto3
