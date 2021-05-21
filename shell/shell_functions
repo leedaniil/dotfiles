@@ -1,0 +1,29 @@
+# ---------------------------------------------------------
+# Common
+# ---------------------------------------------------------
+function mkcd() { mkdir -p "$@" && cd "$_"; }
+function f() { find . -iname "*$1*" ${@:2} }
+function r() { grep "$1" ${@:2} -R . }
+function nullhost() {curl -F"file=@$1" 'https://0x0.st' | cat}
+
+
+# ---------------------------------------------------------
+# Git
+# ---------------------------------------------------------
+function qwe() { git add -A && git commit -m "$1" && git push }
+
+
+# ---------------------------------------------------------
+# Sandbox
+# ---------------------------------------------------------
+function fup() {
+    list=`git diff --name-only HEAD`
+    echo "$list"
+
+    prefix="~/${PWD##*/}/"
+    echo "$prefix"
+
+    while read line; do
+        scp ${line} HOSTNAME:${prefix}${line}
+    done <<< "$list"
+}
