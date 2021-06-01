@@ -14,6 +14,14 @@ function qwe() { git add -A && git commit -m "$1" && git push }
 
 
 # ---------------------------------------------------------
+# Docker
+# ---------------------------------------------------------
+function docker_kill() {docker kill $(docker ps -q)}
+function docker_rm() {docker rm $(docker ps -a | awk '{print $1}')}
+function docker_rmi() {docker rmi $(docker images | awk '{print $3}')}
+
+
+# ---------------------------------------------------------
 # Sandbox
 # ---------------------------------------------------------
 function fup() {

@@ -108,7 +108,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   if ask_for_confirmation "Install oh-my-zsh?"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh); exit"
 
-    mklink "$PWD/zsh-custom/themes/materialshell.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/materialshell.zsh-theme"
+    mklink "$PWD/zsh-custom/themes/materialshell.zsh-theme" "$HOME/.oh-my-zsh/themes/materialshell.zsh-theme"
   else
     print_error "Oh My Zsh is not installed!"
     exit 1
@@ -173,7 +173,7 @@ unset FILES_TO_SYMLINK
 # ---------------------------------------------------------
 mkdir -p $GOPATH/bin $GOPATH/src $GOPATH/pkg
 
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.39.0
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.38.0
 
 
 # ---------------------------------------------------------

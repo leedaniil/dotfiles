@@ -9,10 +9,4 @@ alias rmvenv="rmvirtualenv $1"
 # SSH
 # ---------------------------------------------------------
 alias grace="ssh root@82.146.62.226" 
-
-
-# ---------------------------------------------------------
-# Docker
-# ---------------------------------------------------------
-alias docker-rm="docker rm $(docker ps -a | awk '{print $1}')"
-alias docker-rmi="docker rmi $(docker images | awk '{print $3}')"
+alias rps="ssh lee@84.201.152.4"
